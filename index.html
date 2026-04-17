@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Wine Shop</title>
 
+<!-- Microsoft Clarity Tracking Code -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "YOUR_PROJECT_ID");
+</script>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f1f1;
+}
+header {
+    background: #5a0f2e;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+nav {
+    background: #8b1e3f;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero {
+    background: url('https://images.unsplash.com/photo-1510626176961-4b57d4fbad03') no-repeat center/cover;
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.card {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+button {
+    background: #5a0f2e;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+footer {
+    background: #5a0f2e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🍷 Elite Wine Shop</h1>
+    <p>Premium Wines Delivered to You</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Offers</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+    Discover Fine Wines
+</div>
+
+<section class="products">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1585386959984-a4155223f6d3">
+        <h3>Red Wine</h3>
+        <p>₹1200</p>
+        <button onclick="addToCart('Red Wine')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1514361892635-e955aa8f0d05">
+        <h3>White Wine</h3>
+        <p>₹1000</p>
+        <button onclick="addToCart('White Wine')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1527169402691-ae31e0c7f0d8">
+        <h3>Rosé Wine</h3>
+        <p>₹1100</p>
+        <button onclick="addToCart('Rose Wine')">Add to Cart</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Elite Wine Shop | Designed for Analytics Practice</p>
+</footer>
+
+<script>
+function addToCart(product) {
+    alert(product + " added to cart!");
+}
+</script>
+
+</body>
+</html>
